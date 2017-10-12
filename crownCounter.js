@@ -880,7 +880,7 @@ var allMice = [
     { id: 882, name: "Portal Pursuer" },
     { id: 883, name: "Dread Knight" },
     { id: 884, name: "Carrion Medium" },
-    { id: 885, name: 'Artillery Commander' },
+    { id: 885, name: "Artillery Commander" },
     { id: 886, name: "Charming Chimer" },
     { id: 887, name: "Cloud Collector" },
     { id: 888, name: "Cycloness" },
