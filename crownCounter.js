@@ -1032,7 +1032,7 @@ var total = golds + silvers + bronze;
 var perc = (total / allMice.length) * 100;
 
 var crownStat = function(label, count) {
-    return "# of " + label + " Crowns: " + count + " (" + (count / total * 100).toFixed(2) + "%)";
+    return "# of " + label + " Crowns: " + count + " (" + (count / allMice.length * 100).toFixed(2) + "%)";
 }
 
 var stats = crownStat("Gold", golds);
