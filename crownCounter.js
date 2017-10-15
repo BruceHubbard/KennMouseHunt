@@ -1030,7 +1030,7 @@ var bronze = mice.reduce(function(count, mouse) {
 
 var total = golds + silvers + bronze;
 var perc = (total / allMice.length) * 100;
-var percCC = (total / (allMice.length-5)) * 100;
+var percCC = ((golds + silvers) / (allMice.length-5)) * 100;
 var perc90 = (total / (allMice.length-5)) * 100;
 
 var crownStat = function(label, count) {
