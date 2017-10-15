@@ -1040,7 +1040,6 @@ var crownStat = function(label, count) {
 var stats = crownStat("Gold", golds);
 stats += "\n" + crownStat("Silver", silvers);
 stats += "\n" + crownStat("Bronze", bronze);
-stats += "\n" + crownStat("Century Club", silvers + golds);
 stats += "\nTotal Crowns: " + total + "/" + allMice.length + " (" + (perc.toFixed(2)) + "%)";
 stats += "\n\nExcluding 5 Prize mice:";
 stats += "\nCentury Club " + (golds + silvers) + "/" + (allMice.length-5) + " (" + (percCC.toFixed(2)) + "%)";
