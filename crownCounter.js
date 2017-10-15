@@ -1030,6 +1030,8 @@ var bronze = mice.reduce(function(count, mouse) {
 
 var total = golds + silvers + bronze;
 var perc = (total / allMice.length) * 100;
+var percCC = (total / (allMice.length-5)) * 100;
+var perc90 = (total / (allMice.length-5)) * 100;
 
 var crownStat = function(label, count) {
     return "# of " + label + " Crowns: " + count + " (" + (count / allMice.length * 100).toFixed(2) + "%)";
@@ -1038,9 +1040,11 @@ var crownStat = function(label, count) {
 var stats = crownStat("Gold", golds);
 stats += "\n" + crownStat("Silver", silvers);
 stats += "\n" + crownStat("Bronze", bronze);
+stats += "\n" + crownStat("Century Club", silvers + golds);
 stats += "\nTotal Crowns: " + total + "/" + allMice.length + " (" + (perc.toFixed(2)) + "%)";
 stats += "\n\nExcluding 5 Prize mice:";
-stats += "\n" + crownStat("Century Club", silvers + golds);
+stats += "\nCentury Club " + (golds + silvers) + "/" + (allMice.length-5) + " (" + (percCC.toFixed(2)) + "%)";
+stats += "\n90% Club " + total + "/" + (allMice.length-5) + " (" + (perc90.toFixed(2)) + "%)";
 
 $('.mhccOutput').remove();
 
