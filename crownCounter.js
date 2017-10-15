@@ -1038,8 +1038,9 @@ var crownStat = function(label, count) {
 var stats = crownStat("Gold", golds);
 stats += "\n" + crownStat("Silver", silvers);
 stats += "\n" + crownStat("Bronze", bronze);
-stats += "\n" + crownStat("Century Club", silvers + golds);
 stats += "\nTotal Crowns: " + total + "/" + allMice.length + " (" + (perc.toFixed(2)) + "%)";
+
+stats += "\n\n" + crownStat("Century Club", silvers + golds);
 
 $('.mhccOutput').remove();
 
