@@ -1034,16 +1034,16 @@ var percCC = ((golds + silvers) / (allMice.length-5)) * 100;
 var perc90 = (total / (allMice.length-5)) * 100;
 
 var crownStat = function(label, count) {
-    return "# of " + label + " Crowns: " + count + " (" + (count / allMice.length * 100).toFixed(2) + "%)";
+    return "  # of " + label + " Crowns: " + count + " (" + (count / allMice.length * 100).toFixed(2) + "%)";
 }
 
-var stats = crownStat("Gold", golds);
-stats += "\n" + crownStat("Silver", silvers);
-stats += "\n" + crownStat("Bronze", bronze);
-stats += "\nTotal Crowns: " + total + "/" + allMice.length + " (" + (perc.toFixed(2)) + "%)";
+var stats = "Total Crowns: " + total + "/" + allMice.length + " (" + (perc.toFixed(2)) + "%)";
+stats += "\n   " + crownStat("Gold", golds);
+stats += "\n   " + crownStat("Silver", silvers);
+stats += "\n   " + crownStat("Bronze", bronze);
 stats += "\n\nExcluding 5 Prize mice:";
-stats += "\nCentury Club " + (golds + silvers) + "/" + (allMice.length-5) + " (" + (percCC.toFixed(2)) + "%)";
-stats += "\n90% Club " + total + "/" + (allMice.length-5) + " (" + (perc90.toFixed(2)) + "%)";
+stats += "\n   Century Club " + (golds + silvers) + "/" + (allMice.length-5) + " (" + (percCC.toFixed(2)) + "%)";
+stats += "\n   90% Club " + total + "/" + (allMice.length-5) + " (" + (perc90.toFixed(2)) + "%)";
 
 $('.mhccOutput').remove();
 
