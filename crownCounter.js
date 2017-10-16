@@ -1,4 +1,4 @@
-var allMice = [
+var allMice = [    
     { "id": 1, "name": "Abominable Snow", "unique": "Abominable Snow Mouse" },
     { "id": 2, "name": "Acolyte", "unique": "Acolyte Mouse" },
     { "id": 3, "name": "Aged", "unique": "Aged Mouse" },
