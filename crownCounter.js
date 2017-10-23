@@ -905,6 +905,10 @@ var allMice = [
     { id: 907, name: "Windy Farmer" },
     { id: 908, name: "Wind Warrior" },
     { id: 909, name: "Wind Watcher" },
+    { id: 910, name: "Captain Cannonball" },
+    { id: 911, name: "Ghost Pirate Queen" },
+    { id: 912, name: "Scorned Pirate" },
+    { id: 913, name: "Spectral Swashbuckler" },
 ];
 
 var mice = []
