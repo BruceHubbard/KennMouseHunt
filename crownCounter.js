@@ -909,6 +909,9 @@ var allMice = [
     { id: 911, name: "Ghost Pirate Queen" },
     { id: 912, name: "Scorned Pirate" },
     { id: 913, name: "Spectral Swashbuckler" },
+    { id: 914, name: "Craggy Ore" },
+    { id: 915, name: "Mountain" },
+    { id: 916, name: "Slope Swimmer" },
 ];
 
 var mice = []
