@@ -912,6 +912,10 @@ var allMice = [
     { id: 914, name: "Craggy Ore" },
     { id: 915, name: "Mountain" },
     { id: 916, name: "Slope Swimmer" },
+    { id: 917, name: "Snow Golem Jockey" },
+    { id: 918, name: "Nice Knitting" },
+    { id: 919, name: "Snow Golem Architect" },
+    { id: 920, name: "Naughty Nougat" },
 ];
 
 var mice = []
